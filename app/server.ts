@@ -42,7 +42,7 @@ async function startServer() {
      origin: [
         'http://localhost:5173',
         'https://www.vsdentalph.com',
-        'https://cloudsmiles-client-7672.onrender.com,
+        'https://cloudsmiles-client-7672.onrender.com'
       ],      
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,  // Allow credentials (cookies, authorization headers)
