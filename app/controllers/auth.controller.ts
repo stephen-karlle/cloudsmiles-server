@@ -481,6 +481,7 @@ export const resendOTP = async (req: Request, res: Response) => {
     }
 
     const credentialOTP = Math.floor(100000 + Math.random() * 900000);
+    console.log(credentialOTP)
     await CredentialsModel.updateOne({ credentialEmail: email }, { $set: { credentialOTP } });
 
     const fullName = await getFullName(existingUser);
